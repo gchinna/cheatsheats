@@ -1,10 +1,12 @@
 # Git cheatsheet
 
 ### add and commit:
-    git commit -am 'check in comment' ==> new files and folders are not staged.
-  OR
     git add . ==> stage all modified, deleted and new files and folders
     git commit -m "check in comment"
+  OR
+    git add . && git commit -m 'check in comment' ==> new files and folders are not staged.
+  OR
+    git add -A && git commit -m "checkin comment"  ==> stage and commit all files, including newly added files
 
 ### push commited changes to remote/master:
     git push -u origin master
