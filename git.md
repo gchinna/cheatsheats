@@ -6,11 +6,11 @@
     git add . ==> stage all modified, deleted and new files and folders
     git commit -m "check in comment"
 
-### push commited changes to master:
+### push commited changes to remote/master:
     git push -u origin master
 
 
-### pull changes from remote:
+### pull changes from remote/master:
     git pull origin master
 
 
@@ -50,6 +50,10 @@
 
 ### pull git submodules after cloning
 git submodule update --init
+
+### add submodule to a repo
+    git submodule add https://github.com/gchinna/pyutils.git pyutils
+    git commit -m "add pyutils submodule"
 
 ### reset git commit author 
     git config --global --edit
